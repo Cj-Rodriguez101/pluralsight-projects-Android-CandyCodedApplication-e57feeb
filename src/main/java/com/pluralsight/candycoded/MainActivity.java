@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
     // ***
-    // TODO - Task 1 - Show Store Information Activity
+    //
     // ***
     public void startInformationActivity(){
         Intent infoIntent = new Intent(this, InfoActivity.class);
@@ -92,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.info){
-            startInformationActivity();
+            Intent infoIntent = new Intent(this, InfoActivity.class);
+            startActivity(infoIntent);
         }
         return super.onOptionsItemSelected(item);
     }
